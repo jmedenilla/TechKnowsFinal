@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inshop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Books - TechKnows</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="inside.html">
+          <h4>Tech<span>Knows</span></h4>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="inside.html">Home</a></li>
+            <li><a class="active" href="inshop.html">Books</a></li>
+            <li><a href="incontact.html">Contact</a></li>
+            <li><a href="inabout.html">About</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search product...." />
+          </div> -->
+        <div class="log-container">
+          <a href="index.html"><button>Log out</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="contFoot">
+      <div class="searchContainer">
+        <button id="addBooksButton">Add Books</button>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by Title or Author"
+        />
+      </div>
+      <div class="bookContainer">
+        <div class="bookFormContainer" id="formBookContainer">
+          <form id="bookForm" enctype="multipart/form-data">
+            <i id="closeButton" class="fa-solid fa-x"></i>
+            <h1>Add Story</h1>
+            <div class="inputContainer">
+              <input
+                type="text"
+                id="titleInput"
+                placeholder="Book Title"
+                required
+              />
+              <input
+                type="text"
+                id="authorInput"
+                placeholder="Author"
+                required
+              />
+            </div>
+            <textarea
+              id="storyInput"
+              placeholder="Book Story"
+              required
+            ></textarea>
+            <input type="file" id="imageInput" accept="image/*" />
+            <button type="submit">Add Book</button>
+          </form>
+        </div>
+
+        <div class="bookContentContainer" id="bookList"></div>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close"
+            ><span><i class="fa-solid fa-arrow-left"></i></span> Back to book
+            list</span
+          >
+          <div class="modalRealContent">
+            <div class="modalMainInfo" id="imageModalContainer">
+              <img id="eachImageModal" src="" alt="" />
+              <h1 id="modalTitle"></h1>
+              <h2 id="modalAuthor"></h2>
+            </div>
+            <div class="modalMainStory">
+              <p id="modalStory"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="row-footer">
+            <div class="footer-col">
+              <h4>Developer</h4>
+              <ul>
+                <li><a href="about.html">about us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>EBook</h4>
+              <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Language</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="inshop.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

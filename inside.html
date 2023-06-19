@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inside.css" />
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="navigation.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="account.js"></script>
+    <link rel="icon" href="images/T.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>TechKnows</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="inside.html">
+          <h4>Tech<span>Knows</span></h4>
+        </a>
+        <nav>
+          <ul>
+            <li><a class="active" href="inside.html">Home</a></li>
+            <li><a href="inshop.html">Books</a></li>
+            <li><a href="incontact.html">Contact</a></li>
+            <li><a href="inabout.html">About</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search product...." />
+        </div> -->
+        <div class="log-container">
+          <a href="index.html"><button>Log out</button></a>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="intro-content">
+        <div class="intro-content_text">
+          <h1>Welcome to Tech<span>Knows</span></h1>
+          <p>
+            Introducing a revolutionary eBook web app, designed to transform
+            your reading experience. With an extensive library of captivating
+            titles, immerse yourself in a world of knowledge and imagination.
+          </p>
+          <a href="inshop.html">
+            <button>EXPLORE NOW</button>
+          </a>
+        </div>
+        <div class="intro-content_image">
+          <img src="images/undraw_book_lover_re_rwjy.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- <section class="categories-container">
+      <div class="each-category">
+        <a href="shop.html">
+          <h3>
+            <span><i class="fas fa-id-card"></i></span>Accessories
+          </h3>
+        </a>
+        <a href="shop.html">
+          <h3>
+            <span><i class="fas fa-tshirt"></i></span>Apparel
+          </h3>
+        </a>
+        <a href="shop.html">
+          <h3>
+            <span><i class="fas fa-receipt"></i></span>Ticket
+          </h3>
+        </a>
+        <a href="shop.html">
+          <h3>
+            <span><i class="fas fa-coffee"></i></span>Merchandise
+          </h3>
+        </a>
+      </div>
+    </section> -->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>Developer</h4>
+            <ul>
+              <li><a href="about.html">about us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>EBook</h4>
+            <ul>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Language</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

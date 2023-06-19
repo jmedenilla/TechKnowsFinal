@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" href="images/T.png" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/be378e2dae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="account.js"></script>
+    <title>Signup - TechKnows</title>
+  </head>
+  <body>
+    <div class="image"><img src="images/polytech.jpg" alt="" /></div>
+    <div class="signup-container">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/Group 6.png" alt="" />
+        </a>
+      </div>
+      <div class="content-container">
+        <h1>REGISTER NOW</h1>
+        <form onsubmit="signup()">
+          <input type="email" placeholder="Email" id="email" />
+          <input type="text" placeholder="Username" id="username" />
+          <input type="password" placeholder="Password" id="password" />
+          <button type="submit" id="btns">SIGN UP</button>
+        </form>
+        <h4>
+          Have an account?
+          <a href="login.html">
+            <span>Log In</span>
+          </a>
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>

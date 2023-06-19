@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shop.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/be378e2dae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="shop.js"></script>
+    <script defer src="navigation.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="icon" href="images/T.png" />
+    <title>Books - TechKnows</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="index.html">
+          <h4>Tech<span>Knows</span></h4>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Books</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search product...." />
+        </div> -->
+        <div class="log-container">
+          <a href="login.html"
+            ><button><span class="icon user"></span> Sign in</button></a
+          >
+          <a href="signup.html"><button>Sign up</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidehead">
+          <div class="dots">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle" style="color: #333"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <hr style="margin: 15px 0; border: 1px solid #eee" />
+        </div>
+        <div class="sidebody" style="height: 69vh">
+          <div class="searchBar">
+            <input
+              placeholder="Search..."
+              id="searchBar"
+              name="searchBar"
+              type="text"
+            />
+            <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+          </div>
+        </div>
+        <div class="sidefoot">
+          <hr style="margin: 15px 0; border: 1px solid #eee" />
+          <div class="social-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+      </div>
+      <div class="data">
+        <!-- <div class="header">
+          <p>BUY EVERYTHING ONLINE</p>
+        </div> -->
+        <div class="body">
+          <div id="root"></div>
+        </div>
+      </div>
+    </div>
+    <div id="root-each" class="view-container"></div>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>administration</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">apparels</a></li>
+              <li><a href="#">tickets</a></li>
+              <li><a href="#">merchandise</a></li>
+              <li><a href="#">accessories</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

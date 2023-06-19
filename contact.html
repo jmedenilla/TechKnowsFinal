@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" href="images/T.png" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/be378e2dae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="navigation.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="contact.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("likc2Ggi_Uj4o2HoW");
+      })();
+    </script>
+    <title>Contact - TechKnows</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="logo-container">
+        <a href="index.html">
+          <h4>Tech<span>Knows</span></h4>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search product...." />
+        </div> -->
+        <div class="log-container">
+          <a href="login.html"
+            ><button><span class="icon user"></span> Sign in</button></a
+          >
+          <a href="signup.html"><button>Sign up</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="contact-text">
+          <h1>Let's get in touch</h1>
+          <h4>
+            Got a question, suggestion, or need assistance? Our dedicated team
+            is ready to help. Contact us to enhance your eBook reading
+            experience.
+          </h4>
+          <div class="address-contact">
+            <div class="each-address-container">
+              <span><i class="fa-solid fa-location-dot"></i></span> Barangay 8,
+              Tuburan, Cebu
+            </div>
+            <div class="each-address-container">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              cot.tuburan@ctu.edu.ph
+            </div>
+            <div class="each-address-container">
+              <span><i class="fa-solid fa-phone"></i></span>
+              (032) 463 9313 loc 114
+            </div>
+          </div>
+          <div class="social-media">
+            <h3>Connect with us</h3>
+            <div class="socmed-logo">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h1>Contact form</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>Developer</h4>
+            <ul>
+              <li><a href="about.html">about us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>EBook</h4>
+            <ul>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Language</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
